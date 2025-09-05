@@ -25,7 +25,7 @@ namespace AdmVeterinaria.Datos
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=localhost\\SQLEXPRESS;Initial Catalog=Veterinaria;Integrated Security=True;TrustServerCertificate=true");
+                optionsBuilder.UseSqlServer(Server=tcp:bdservidorj.database.windows.net,1433;Initial Catalog=Veterinaria;Persist Security Info=False;User ID=JuanBergonzi;Password={Juan1234};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;);
             }
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
