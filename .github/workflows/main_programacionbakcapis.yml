@@ -9,7 +9,7 @@ on:
       - main
   workflow_dispatch:
 env:
-  PROJECT_DIR: AdmVeterinaria/AdmVeterinaria
+  PROJECT_DIR: Veterinaria/AdmVeterinaria/AdmVeterinaria
   
 jobs:
   build:
@@ -68,3 +68,4 @@ jobs:
           package: .
 
           
+
